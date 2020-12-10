@@ -1,0 +1,244 @@
+
+@import '../font/font.css';
+
+*{
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+  font-family: 'RR';
+}
+
+/* Start of Header */
+header{
+  background: url(../img/header_bg.jpg);
+  height: 700px;
+  width: 100%;
+  display: flex;
+}
+
+.header-h{
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: auto;
+  max-width: 1110px;
+  width: 100%;
+}
+
+.header-h h2{
+  font-size: 50px;
+  font-family: 'RL';
+  color: #70869d;
+}
+
+.header-h h1{
+  font-size: 70px;
+  font-family: 'RB';
+  color: #404040;
+}
+/* End of Header */
+
+/* Start of Main Content1 */
+main{
+  width: 100%;
+}
+.container{
+  max-width: 1110px;
+  width: 100%;
+  margin: auto;
+}
+.content1{
+  display: flex;
+  flex-wrap: wrap; 
+  justify-content: center; 
+  
+}
+.wth{
+  padding-left: 25px;
+}
+.content{
+  max-width: 555px;
+  width: 100%;
+  display: flex;
+  margin-top: 100px;
+}
+.content .content-item h3{
+  font-family: 'RB';
+  font-size: 18px;
+  color: #1f3750;
+  margin-top: 25px;
+}
+.content .content-item .h3{
+  line-height: 13px;
+  margin-top: 14px;
+}
+.content .content-item p{
+  font-size: 16px;
+  font-family: 'RL';
+  color: #70869d;
+}
+.content .content-item .btn{
+  padding: 14px 62px 14px 42px;
+  color: #70869d;
+  display: inline-block;
+  margin-top: 11px;
+}
+.content .content-item .btn:hover{
+  cursor: pointer;
+  background-color: #0092b6;
+  color: #fff;
+  transition: 0.5s;
+}
+/* End of Main Content1 */
+
+/* Start of Main Content2 */
+.content2{
+  margin-top: 100px;
+  display: flex;
+  justify-content: space-between;
+}
+.content2 .content2-item{
+  max-width: 277.5px;
+  width: 100%;
+  padding: 14px;
+}
+.txt{
+  text-align: center;
+}
+.txt2{
+  text-align: start;
+  margin-top: 30px;
+}
+.content2 .content2-item h3{
+  color: #1f3750;
+  padding: 0 20px;
+  font-size: 16px;
+  font-family: 'RB';
+  margin-bottom: 35px;
+}
+.content2 .content2-item a{
+  text-decoration: underline;
+  margin-top: 28px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  
+}
+.content2 .content2-item a, 
+.content2 .content2-item p{
+  font-size: 16px;
+  font-family: 'RL';
+  padding: 0 20px;
+  color: #70869d;
+}
+.content2 .content2-item a:hover{
+  font-family: 'RB';
+  color: #1f3750;
+  cursor: pointer;
+  transition: 00.5s;
+}
+/* End of Main Content2 */
+
+/* Start of Main Content3 */
+
+.content3{
+  margin-top: 100px;
+  display: flex;
+  flex-direction: column;
+
+}
+.content3 h3{
+  color: #2e445c;
+  font-size: 20px;
+  margin-bottom: 54px;
+}
+.content3 .nav-item .navigations{
+  display: flex;
+  justify-content: space-between;
+}
+.content3 .nav-item .navigations ul li a{
+  display: inline-block;
+  font-size: 20px;
+  font-family: 'RR';
+  color: #70869d;
+  margin-bottom: 12px;
+}
+.content3 .nav-item .navigations ul li a:hover{
+  color: #0092b6;
+  transition: 00.5s;
+}
+/* End of Main Content3 */
+
+/* End of Main */
+
+/* Start of Footer */
+footer{
+  width: 100%;
+}
+.footer-nav{
+  max-width: 1110px;
+  width: 100%;
+  margin: 100px auto 40px auto;
+  display: flex;
+  justify-content: space-between;
+}
+.footer-nav h3{
+  font-size: 20px;
+  font-family: 'RB';
+}
+nav ul{
+  display: flex;
+}
+nav ul li a{
+  display: inline-block;
+  margin-left: 32px;
+  color: #7f8080;
+  font-size: 14px;
+  font-family: 'RR';
+}
+/* End of Footer */
+
+/* End of this project 
+Thanks for Everyone who wrote rhis web page !!! */
+
+/* Adaptate */
+@media(max-width:952px){
+  .content2{
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+@media(max-width:700px){
+  .navigations{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+}
+@media(max-width:510px){
+  .content{
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .footer-nav{
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .footer-nav ul li a{
+    margin: 4%;
+   }
+   .footer-nav h3{
+     display: none;
+   }
+  .navigations{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+}
